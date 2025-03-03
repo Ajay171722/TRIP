@@ -5,7 +5,7 @@
   overflow: hidden;
   margin: 20px 0;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(240, 237, 237, 0.839);
 }
 
 .slides {
@@ -67,7 +67,7 @@
 
 .city-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
@@ -179,6 +179,55 @@
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+.dining,
+.accommodation,
+.activities,
+.budget-guide {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.dining h3,
+.accommodation h3,
+.activities h3,
+.budget-guide h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dining ul,
+.accommodation ul,
+.activities ul,
+.budget-guide ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dining li,
+.accommodation li,
+.activities li,
+.budget-guide li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.dining li:hover,
+.accommodation li:hover,
+.activities li:hover,
+.budget-guide li:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
 @media (max-width: 768px) {
   .slideshow-container {
     height: 400px;
@@ -200,8 +249,11 @@
     padding: 20px;
   }
   
-  .attractions li, .known-for li {
+  .dining li,
+  .accommodation li,
+  .activities li,
+  .budget-guide li {
     font-size: 12px;
-    padding: 4px 12px;
+    padding: 6px 12px;
   }
 } 

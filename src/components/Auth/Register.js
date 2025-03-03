@@ -15,7 +15,7 @@ const Register = ({ onRegister }) => {
       alert("Passwords don't match!");
       return;
     }
-    // Here you would typically make an API call to register the user
+    
     onRegister(formData);
   };
 

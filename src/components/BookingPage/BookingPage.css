@@ -1,0 +1,154 @@
+.booking-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  min-height: 100vh;
+}
+
+.booking-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  border: none;
+  background: #f3f4f6;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #e5e7eb;
+}
+
+.adventure-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.adventure-details img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.adventure-info h2 {
+  margin: 0 0 15px;
+  color: #1a202c;
+}
+
+.description {
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.includes {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.includes h3 {
+  margin: 0 0 15px;
+  color: #2d3748;
+}
+
+.includes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.includes li {
+  padding: 8px 0;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.includes li::before {
+  content: "✓";
+  color: #4ECDC4;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.booking-summary {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px 0;
+}
+
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.submit-booking {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #4ECDC4, #2BAD9F);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-booking:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(78,205,196,0.2);
+}
+
+@media (max-width: 768px) {
+  .adventure-details {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+} 

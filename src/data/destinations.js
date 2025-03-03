@@ -4,7 +4,7 @@ export const destinations = {
     places: [
       {
         name: 'Red Fort',
-        image: 'https://images.unsplash.com/photo-1585136917972-7e21c13f9acd',
+        image: 'https://imgcld.yatra.com/ytimages/image/upload/v1461929855/Delhi-Red_Fort1.jpg',
         description: 'UNESCO World Heritage Site and iconic symbol of Delhi',
         timeNeeded: '3-4 hours',
         entryFee: '₹35',
@@ -13,7 +13,7 @@ export const destinations = {
       },
       {
         name: 'Qutub Minar',
-        image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523',
+        image: 'https://www.tripsavvy.com/thmb/d1wokxkC6ce794ZIYt0_Z4N-vDg=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-165204592-13098573e64346af9d73b4d1f28034d4.jpg',
         description: 'UNESCO World Heritage Site, tallest brick minaret in the world',
         timeNeeded: '2-3 hours',
         entryFee: '₹30',
@@ -22,7 +22,7 @@ export const destinations = {
       },
       {
         name: 'Humayun\'s Tomb',
-        image: 'https://images.unsplash.com/photo-1548013146-72479768bada',
+        image: 'https://whc.unesco.org/uploads/thumbs/site_0232_0005-1200-630-20210425155601.jpg',
         description: 'Beautiful Mughal architecture and gardens',
         timeNeeded: '2-3 hours',
         entryFee: '₹30',
@@ -31,7 +31,7 @@ export const destinations = {
       },
       {
         name: 'India Gate',
-        image: 'https://images.unsplash.com/photo-india-gate',
+        image: 'https://www.theindia.co.in/blog/wp-content/uploads/2021/12/India-Gate-min.jpg',
         description: 'War memorial and iconic landmark',
         timeNeeded: '1-2 hours',
         entryFee: 'Free',
@@ -40,7 +40,7 @@ export const destinations = {
       },
       {
         name: 'Akshardham Temple',
-        image: 'https://images.unsplash.com/photo-akshardham',
+        image: 'https://images.mapsofworld.com/allwonders/2015/01/Akshardham.png',
         description: 'Largest Hindu temple complex in the world',
         timeNeeded: '4-5 hours',
         entryFee: 'Free (Exhibition: ₹170)',
@@ -49,7 +49,7 @@ export const destinations = {
       },
       {
         name: 'Lotus Temple',
-        image: 'https://images.unsplash.com/photo-lotus-temple',
+        image: 'https://www.indiatravelblog.net/wp-content/uploads/2011/09/Lotus-Temple-delhi-at-night.jpg',
         description: 'Architectural marvel and peaceful meditation spot',
         timeNeeded: '1-2 hours',
         entryFee: 'Free',
@@ -58,7 +58,7 @@ export const destinations = {
       },
       {
         name: 'Jama Masjid',
-        image: 'https://images.unsplash.com/photo-jama-masjid',
+        image: 'https://www.tripsavvy.com/thmb/HXmNA3Qe1N7ouXzZxMqW3zWuCWo=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-146276587-4542811553864e09804ab7dda84e1fdb.jpg',
         description: 'India\'s largest mosque',
         timeNeeded: '2 hours',
         entryFee: 'Free (Camera: ₹300)',
@@ -67,7 +67,7 @@ export const destinations = {
       },
       {
         name: 'National Museum',
-        image: 'https://images.unsplash.com/photo-national-museum',
+        image: 'https://delhitourism.travel/images/places-to-visit/headers/national-museum-of-india-delhi-tourism-entry-fee-timings-holidays-reviews-header.jpg',
         description: 'Rich collection of Indian heritage',
         timeNeeded: '3-4 hours',
         entryFee: '₹20',
@@ -76,7 +76,7 @@ export const destinations = {
       },
       {
         name: 'Lodhi Gardens',
-        image: 'https://images.unsplash.com/photo-lodhi-garden',
+        image: 'https://lp-cms-production.imgix.net/2019-06/d037496bdc8b72cf1e78bd9a08a5a823-lodi-gardens.jpg?auto=format&q=40&ar=16:9&fit=crop&crop=center&fm=auto&w=3524',
         description: 'Historic park with monuments',
         timeNeeded: '2-3 hours',
         entryFee: 'Free',
@@ -85,7 +85,7 @@ export const destinations = {
       },
       {
         name: 'Hauz Khas Complex',
-        image: 'https://images.unsplash.com/photo-hauz-khas',
+        image: 'https://1.bp.blogspot.com/-HsjM_DVPVDc/XtzNXhgk7JI/AAAAAAAAe4c/lhZugFWa1m8hQhz7qaTa5Rx6mGdyAy14ACK4BGAsYHg/s1008/Hauz_Khas_in_Delhi.jpg',
         description: 'Historic complex with modern village',
         timeNeeded: '3-4 hours',
         entryFee: 'Free',
@@ -96,7 +96,7 @@ export const destinations = {
     hotels: [
       {
         name: 'The Imperial',
-        image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb',
+        image: 'https://www.redsavannah.com/-/media/countries/india/accommodation/the-imperial-new-delhi/imperial-delhi-lawn.jpg?h=610&w=1400&udi=1&cropregion=0,29,1571,714&hash=BA70EB1E152477F0FD152777A61797A0',
         description: 'Luxury 5-star heritage hotel',
         priceRange: 20000,
         rating: 4.8,
@@ -105,7 +105,7 @@ export const destinations = {
       },
       {
         name: 'The Oberoi',
-        image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9',
+        image: 'http://www.new-delhi-hotels.com/blog/wp-content/uploads/2012/09/The-Oberoi-New-Delhi.jpg',
         description: 'Premium luxury hotel',
         priceRange: '₹18,000 - ₹45,000',
         rating: 4.7,
@@ -113,7 +113,7 @@ export const destinations = {
       },
       {
         name: 'Hotel Palace Heights',
-        image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945',
+        image: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/45385271.jpg?k=462dd21e1d16bfdb62863f10b91a976b26825abe2243a07968a622a519b742ed&o=&hp=1',
         description: 'Comfortable mid-range hotel in Connaught Place',
         priceRange: 5000,
         rating: 4.2,
@@ -122,7 +122,7 @@ export const destinations = {
       },
       {
         name: 'Bloomrooms',
-        image: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c',
+        image: 'https://www.myboutiquehotel.com/photos/7340/bloomrooms-new-delhi-railway-station-new-delhi-003-40957-1110x700.jpg',
         description: 'Modern budget hotel with great amenities',
         priceRange: 2500,
         rating: 4.0,
@@ -131,7 +131,7 @@ export const destinations = {
       },
       {
         name: 'The Claridges',
-        image: 'https://images.unsplash.com/photo-claridges',
+        image: 'https://www.new-delhi-hotels.com/blog/wp-content/uploads/2013/02/The-Claridges-New-Delhi.jpg',
         description: 'Colonial charm with modern amenities',
         priceRange: 12000,
         rating: 4.5,
@@ -141,7 +141,7 @@ export const destinations = {
       },
       {
         name: 'The Metropolitan',
-        image: 'https://images.unsplash.com/photo-metropolitan',
+        image: 'https://d1rioy1v9s51jr.cloudfront.net/pics/2648/1800x900/the-metropolitan-hotel-new-delhi-2_8570.jpg',
         description: 'Business hotel with great location',
         priceRange: 7000,
         rating: 4.3,
@@ -152,7 +152,7 @@ export const destinations = {
     restaurants: [
       {
         name: 'Indian Accent',
-        image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4',
+        image: 'https://media-cdn.tripadvisor.com/media/photo-s/12/0c/5d/9b/indian-accent.jpg',
         cuisine: 'Modern Indian',
         price: '₹₹₹',
         rating: 4.8,
@@ -178,7 +178,7 @@ export const destinations = {
       },
       {
         name: 'Karim\'s',
-        image: 'https://images.unsplash.com/photo-1576621934720-5f0400ca11a3',
+        image: 'https://kashmirobserver.net/wp-content/uploads/2023/09/Karims.jpg',
         cuisine: 'Mughlai',
         price: '₹₹',
         rating: 4.4,
@@ -187,7 +187,7 @@ export const destinations = {
       },
       {
         name: 'Dum Pukht',
-        image: 'https://images.unsplash.com/photo-dum-pukht',
+        image: 'http://1.bp.blogspot.com/-QaYFMA6eG3E/VPmk9tEtMrI/AAAAAAAABX8/f7ohTm_itCM/s1600/IMG_4743.JPG',
         cuisine: 'Awadhi',
         price: '₹₹₹₹',
         rating: 4.8,
@@ -196,7 +196,7 @@ export const destinations = {
       },
       {
         name: 'Dilli 32',
-        image: 'https://images.unsplash.com/photo-dilli-32',
+        image: 'https://cdn.venuelook.com/uploads/space_4798/1443854792_595x400.png',
         cuisine: 'North Indian',
         price: '₹₹₹',
         rating: 4.6,
@@ -205,7 +205,7 @@ export const destinations = {
       },
       {
         name: 'Soda Bottle Opener Wala',
-        image: 'https://images.unsplash.com/photo-soda-bottle',
+        image: 'https://talktravelapp.com/wp-content/uploads/Soda-Bottle-Opener-Wala-Delhi-India.jpg',
         cuisine: 'Parsi',
         price: '₹₹',
         rating: 4.3,
@@ -225,7 +225,7 @@ export const destinations = {
     adventures: [
       {
         name: 'Old Delhi Food & Heritage Walk',
-        image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950',
+        image: 'https://storage.googleapis.com/prune/blog_image/old-delhi-food.jpg',
         description: 'Experience the bustling streets of Old Delhi, try famous street food, and explore hidden gems',
         highlights: [
           'Visit Jama Masjid',
@@ -239,7 +239,7 @@ export const destinations = {
       },
       {
         name: 'Evening at Kingdom of Dreams',
-        image: 'https://images.unsplash.com/photo-kingdom-of-dreams',
+        image: 'https://live.staticflickr.com/7145/6631579761_23d1ae66b6_b.jpg',
         description: 'Enjoy Bollywood style entertainment and dining experience',
         highlights: [
           'Watch cultural shows',
@@ -253,7 +253,7 @@ export const destinations = {
       },
       {
         name: 'Delhi Shopping Tour',
-        image: 'https://images.unsplash.com/photo-delhi-market',
+        image: 'https://itmholidays.com/wp-content/uploads/2018/03/Slider-7-23.jpg',
         description: 'Visit best shopping spots from local markets to luxury malls',
         highlights: [
           'Sarojini Nagar Market',
@@ -1242,5 +1242,775 @@ export const destinations = {
         includes: ['Classes', 'Meals', 'Mat', 'Certificate']
       }
     ]
+  },
+  'Kolkata': {
+    image: 'https://static.toiimg.com/photo/48355930/.jpg',
+    places: [
+      {
+        name: 'Victoria Memorial',
+        image: 'https://cdn.pixabay.com/photo/2017/12/31/14/43/victoria-memorial-3052473_1280.jpg',
+        description: 'Magnificent marble building dedicated to Queen Victoria',
+        timeNeeded: '2-3 hours',
+        entryFee: '₹30 (Indians), ₹500 (Foreigners)',
+        bestTime: 'Early morning'
+      },
+      {
+        name: 'Howrah Bridge',
+        image: 'https://thetravelshots.com/wp-content/uploads/2023/03/Howrah-Bridge.jpg',
+        description: 'Iconic cantilever bridge over the Hooghly River',
+        timeNeeded: '1 hour',
+        bestTime: 'Sunset'
+      },
+      {
+        name: 'Dakshineswar Kali Temple',
+        image: 'https://kolkatatourism.travel/images/places-to-visit/headers/dakshineswar-kali-temple-kolkata-entry-fee-timings-holidays-reviews-header.jpg',
+        description: 'Historic Kali temple on the banks of Hooghly',
+        timeNeeded: '2 hours',
+        bestTime: 'Morning'
+      }
+    ],
+    hotels: [
+      {
+        name: 'The Oberoi Grand',
+        image: 'https://images.trvl-media.com/hotels/1000000/30000/20500/20421/51fc1d48_z.jpg',
+        priceRange: '₹40,000',
+        rating: 4.8,
+        amenities: ['Pool', 'Spa', 'Fine Dining']
+      },
+      {
+        name: 'Taj Bengal',
+        image: 'https://im.whatshot.in/img/2022/May/taj3-1652337436.jpg?wm=1&w=1200&h=630&cc=1',
+        priceRange: '₹2054',
+        rating: 4.7,
+        amenities: ['Multiple Restaurants', 'Business Center', 'Spa']
+      }
+    ],
+    restaurants: [
+      {
+        name: '6 Ballygunge Place',
+        image: 'https://media.cntraveller.in/wp-content/uploads/2019/12/6-ballygunge-place-interior.jpg',
+        cuisine: 'Bengali',
+        priceRange: '₹1000 for two persons',
+        mustTry: ['Ilish Paturi', 'Kosha Mangsho']
+      },
+      {
+        name: 'Peter Cat',
+        image: 'https://im.whatshot.in/img/2019/Jun/sc-1560950125.jpg?wm=1&w=1200&h=630&cc=1',
+        cuisine: 'Continental, Indian',
+        priceRange: '₹1600 for two persons',
+        mustTry: ['Chelo Kebab', 'Fish Orly']
+      }
+    ],
+    adventures: [
+      {
+        name: "Hooghly River Cruise",
+        image: "https://www.authenticindiatours.com/app/uploads/2022/05/Historic-Hooghly-River-Cruise-1400x550-c-default.jpg",
+        description: "Scenic boat ride along the Hooghly River",
+        highlights: [
+          "Sunset views",
+          "City skyline",
+          "Cultural performances",
+          "Dinner on board"
+        ],
+        timing: "5:00 PM - 8:00 PM",
+        price: 2000,
+        includes: ["Welcome drink", "Buffet dinner", "Live music"]
+      },
+      {
+        name: "Kolkata Heritage Walk",
+        image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/a8/4c/67.jpg",
+        description: "Explore Kolkata's colonial and cultural history",
+        highlights: [
+          "Old British architecture",
+          "Local street food tasting",
+          "Iconic landmarks",
+          "Photographic spots"
+        ],
+        timing: "7:00 AM - 10:00 AM",
+        price: 1500,
+        includes: ["Guide", "Refreshments", "Entry tickets"]
+      },
+      {
+        name: "Tram Ride Experience",
+        image: "https://i.ytimg.com/vi/7S4G1BovFcM/maxresdefault.jpg",
+        description: "A nostalgic ride on India's oldest tram network",
+        highlights: [
+          "Slow-paced scenic ride",
+          "Travel through old Kolkata streets",
+          "Eco-friendly transport",
+          "Historical significance"
+        ],
+        timing: "6:00 AM - 10:00 PM",
+        price: 50,
+        includes: ["Tram ticket", "Local guide (optional)"]
+      },
+      {
+        name: "Eden Gardens Cricket Match",
+        image: "https://i.ytimg.com/vi/l8YU2bj5i6Y/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGMgZSg7MA8=&rs=AOn4CLCBEeSPpS4qGzn4Wwxl-P9MBkoBqw",
+        description: "Watch an exciting cricket match in India's oldest stadium",
+        highlights: [
+          "Thrilling live matches",
+          "One of the largest stadiums",
+          "Electric crowd atmosphere",
+          "IPL and international games"
+        ],
+        timing: "Varies based on match schedule",
+        price: "Varies",
+        includes: ["Match ticket", "Seating arrangement"]
+      }
+    ],
+    transport: [
+      { 
+        type: "Auto",
+        availability: true,
+        price: "₹100-300",
+        description: "Best for short distances within city",
+        waitTime: "2-5 minutes"
+      },
+      { 
+        type: "Taxi",
+        availability: true,
+        price: "₹1000-1500/day",
+        description: "Convenient for full-day city tours",
+        waitTime: "5-10 minutes"
+      },
+      { 
+        type: "Metro",
+        availability: true,
+        price: "₹5-30 per ride",
+        description: "Fast transit across major city points",
+        operatingHours: "6:00 AM - 10:00 PM"
+      },
+      { 
+        type: "Tram",
+        availability: true,
+        price: "₹10-30 per ride",
+        description: "Heritage transport experience",
+        operatingHours: "5:00 AM - 11:00 PM"
+      },
+      { 
+        type: "Bus",
+        availability: true,
+        price: "₹10-50 per ride",
+        description: "Extensive network covering all areas",
+        frequency: "Every 10-15 minutes"
+      },
+      { 
+        type: "Rickshaw",
+        availability: true,
+        price: "₹50-200",
+        description: "Perfect for narrow lanes and short trips",
+        bestFor: "Local area exploration"
+      },
+      { 
+        type: "Ferry",
+        availability: true,
+        price: "₹10-50 per ride",
+        description: "Hooghly river crossings",
+        operatingHours: "6:00 AM - 9:00 PM"
+      }
+    ],
+    budget: {
+      budget: {
+        perDay: 2500,
+        includes: ["Budget hotels", "Local transport", "Street food"],
+        note: "Perfect for backpackers"
+      },
+      luxury: {
+        perDay: 6000,
+        includes: ["4-5 star hotels", "Private taxi", "Fine dining"],
+        note: "Recommended for comfort travelers"
+      }
+    }
+  },
+  'Hyderabad': {
+    image: "https://image3.mouthshut.com/images/imagesp/925003662s.jpg",
+    places: [
+      {
+        name: "Charminar",
+        image: "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_181574087_20200124175621_20200124175707.png",
+        description: "Iconic 16th-century mosque with towering minarets",
+        timeNeeded: "1-2 hours",
+        entryFee: "₹25 (Indians), ₹300 (Foreigners)",
+        bestTime: "Evening"
+      },
+      {
+        name: "Golconda Fort",
+        image: "https://www.liveenhanced.com/wp-content/uploads/2018/01/10.Golconda-Fort-Images.jpg",
+        description: "Historic fortress known for its acoustics and architecture",
+        timeNeeded: "3-4 hours",
+        entryFee: "₹20 (Indians), ₹200 (Foreigners)",
+        bestTime: "Morning or evening"
+      },
+      {
+        name: "Ramoji Film City",
+        image: "https://buddymantra.com/wp-content/uploads/2018/01/ramoji-film-city.jpg",
+        description: "World's largest film city with guided tours and attractions",
+        timeNeeded: "Full day",
+        entryFee: "₹1250 (General), ₹2349 (Premium)",
+        bestTime: "Winter months"
+      }
+    ],
+    hotels: [
+      {
+        name: "Taj Falaknuma Palace",
+        image: "https://d1cdc15hzkd3wm.cloudfront.net/products/medias/originalmark/X1FQUVhL.jpg",
+        priceRange: "₹35,000",
+        rating: 4.9,
+        amenities: ["Heritage Stay", "Fine Dining", "Luxury Spa"]
+      },
+      {
+        name: "ITC Kohenur",
+        image: "http://www.cfmedia.vfmleonardo.com/imageRepo/6/0/101/719/895/hydlk-exterior-8197-hor-clsc_S.jpg",
+        priceRange: "₹10,000",
+        rating: 4.7,
+        amenities: ["Pool", "Multiple Restaurants", "Spa"]
+      }
+    ],
+    restaurants: [
+      {
+        name: "Paradise Biryani",
+        image: "https://im.indiatimes.in/media/content/2019/Feb/paradise_restaurant_1550998997_725x725.jpg",
+        cuisine: "Hyderabadi",
+        price: "₹800 for two persons",
+        mustTry: ["Hyderabadi Biryani", "Kebabs"]
+      },
+      {
+        name: "Jewel of Nizam",
+        image: "https://media-cdn.tripadvisor.com/media/photo-s/09/30/8d/8c/jewel-of-nizam-the-minar.jpg",
+        cuisine: "Royal Nizami",
+        price: "₹2000 for two persons",
+        mustTry: ["Haleem", "Patthar Ka Gosht"]
+      }
+    ],
+    adventures: [
+      {
+        name: "Hussain Sagar Lake Boating",
+        image: "https://www.newstap.in/h-upload/2023/07/04/1518000-whatsapp-image-2023-07-04-at-84141-pm.jpg",
+        description: "Boat ride in the heart of Hyderabad with views of the Buddha Statue",
+        highlights: [
+          "Sunset cruise",
+          "Pedal boats & speedboats",
+          "Musical fountain show"
+        ],
+        timing: "10:00 AM - 9:00 PM",
+        price: "₹50 - ₹300",
+        includes: ["Boat ride", "Safety gear"]
+      },
+      {
+        name: "Rock Climbing at Bhongir Fort",
+        image: "https://rockclimbingschool.in/media/level-III-rock-image1.jpg",
+        description: "Exciting rock climbing adventure at an ancient fort",
+        highlights: [
+          "Thrilling rock formations",
+          "Historic fort exploration",
+          "Panoramic city views"
+        ],
+        timing: "6:00 AM - 5:00 PM",
+        price: 1000,
+        includes: ["Climbing gear", "Guide"]
+      },
+      {
+        name: "Go Karting at Runway 9",
+        image: "https://i.pinimg.com/originals/b0/a2/f1/b0a2f15ce971396874620ae743c0e0b4.jpg",
+        description: "Fast-paced go-karting experience",
+        highlights: [
+          "Well-maintained track",
+          "Different karting levels",
+          "Perfect for adrenaline junkies"
+        ],
+        timing: "3:00 PM - 11:00 PM",
+        price: "₹400 - ₹1000",
+        includes: ["Safety gear", "Lap timing"]
+      }
+    ],
+    transport: [
+      {
+        type: "Auto",
+        availability: true,
+        price: "₹50-200",
+        description: "Best for short distances within the city",
+        waitTime: "2-5 minutes"
+      },
+      {
+        type: "Taxi",
+        availability: true,
+        price: "₹1000-1500/day",
+        description: "Convenient for full-day city tours",
+        waitTime: "5-10 minutes"
+      },
+      {
+        type: "Metro",
+        availability: true,
+        price: "₹10-60 per ride",
+        description: "Fast transit covering major areas",
+        operatingHours: "6:00 AM - 11:00 PM"
+      },
+      {
+        type: "Bus",
+        availability: true,
+        price: "₹10-50 per ride",
+        description: "Affordable way to travel across the city",
+        frequency: "Every 10-15 minutes"
+      },
+      {
+        type: "Cab Services",
+        availability: true,
+        price: "₹10 per km (approx)",
+        description: "Uber, Ola, and Rapido available",
+        bestFor: "Comfort and easy booking"
+      }
+    ],
+    budget: {
+      budget: {
+        perDay: 2500,
+        includes: ["Budget hotels", "Local transport", "Street food"],
+        note: "Great for solo and budget travelers"
+      },
+      luxury: {
+        perDay: 6000,
+        includes: ["5-star hotels", "Private cab", "Fine dining"],
+        note: "Ideal for premium travelers"
+      }
+    }
+  },
+ 'Mysore': {
+    image: "http://4.bp.blogspot.com/-tNWLyhvP0Kc/Tzpi1ZU0STI/AAAAAAAAAEk/be2yEDHQs0g/s1600/mysore_palace.jpg",
+    places: [
+      {
+        name: "Mysore Palace",
+        image: "https://photographylife.com/wp-content/uploads/2015/07/DP2M0153c.jpg",
+        description: "Majestic royal residence of the Wadiyar dynasty",
+        timeNeeded: "2-3 hours",
+        entryFee: "₹100 (Indians), ₹500 (Foreigners)",
+        bestTime: "Evening (for lighting show)"
+      },
+      {
+        name: "Chamundi Hill & Temple",
+        image: "https://images.nativeplanet.com/img/2023/08/chamundi-hill-temple_1692426407996-600x338-20230819120214.jpg",
+        description: "Famous temple on a hilltop with panoramic city views",
+        timeNeeded: "1-2 hours",
+        entryFee: "Free",
+        bestTime: "Morning or sunset"
+      },
+      {
+        name: "Brindavan Gardens",
+        image: "https://experiencekerala.in/image-uploads/1490972817.thumbnail.7.jpg",
+        description: "Well-manicured gardens with a musical fountain",
+        timeNeeded: "2 hours",
+        entryFee: "₹50",
+        bestTime: "Evening (for light and fountain show)"
+      }
+    ],
+    hotels: [
+      {
+        name: "The Lalitha Mahal Palace",
+        image: "https://static-blog.treebo.com/wp-content/uploads/2021/12/Lalitha-Mahal-Palace-Mysore.jpg",
+        priceRange: "₹12,000",
+        rating: 4.7,
+        amenities: ["Heritage Stay", "Swimming Pool", "Luxury Dining"]
+      },
+      {
+        name: "Radisson Blu Plaza",
+        image: "https://www.indovacations.net/hotels/images/Radisson-Mysore1.jpg",
+        priceRange: "₹8,000",
+        rating: 4.6,
+        amenities: ["Spa", "Multiple Restaurants", "Pool"]
+      }
+    ],
+    restaurants: [
+      {
+        name: "Mysore Dasaprakash",
+        image: "https://cdn1.goibibo.com/voy_ing/t_g/f51cc24c70e211e492fa32e76f7e45c9.jfif",
+        cuisine: "South Indian",
+        price: "₹600 for two persons",
+        mustTry: ["Mysore Masala Dosa", "Rava Idli"]
+      },
+      {
+        name: "Gufha - The President Hotel",
+        image: "https://r1imghtlak.mmtcdn.com/4b16a6780a9311e5859936cfdd80c293.jfif?&output-quality=75&downsize=910:612&crop=910:612;0,35&output-format=jpg",
+        cuisine: "North Indian, Mughlai",
+        price: "₹1200 for two persons",
+        mustTry: ["Chicken Biryani", "Mutton Rogan Josh"]
+      }
+    ],
+    adventures: [
+      {
+        name: "Chamundi Hills Trek",
+        image: "https://3.bp.blogspot.com/-lP1LB5oMQao/TcJTNDGmk2I/AAAAAAAAHKE/4ZPaN6zytRQ/s1600/steps.jpg",
+        description: "A scenic trek up Chamundi Hills with panoramic views",
+        highlights: [
+          "1000-step trek",
+          "Breathtaking sunrise view",
+          "Visit to Chamundi Temple"
+        ],
+        timing: "5:00 AM - 7:00 PM",
+        price: "Free",
+        includes: ["Guided tour available at extra cost"]
+      },
+      {
+        name: "Cycling Tour of Mysore",
+        image: "https://d26dp53kz39178.cloudfront.net/media/uploads/products/Cycling-2_SJy1lKu.jpg",
+        description: "Explore Mysore's heritage on a cycle tour",
+        highlights: [
+          "Ride through old streets",
+          "Visit historical landmarks",
+          "Enjoy local street food"
+        ],
+        timing: "6:00 AM - 10:00 AM",
+        price: 1500,
+        includes: ["Cycle rental", "Guide", "Breakfast"]
+      },
+      {
+        name: "Wildlife Safari at Bandipur",
+        image: "https://wildtrails.in/wp-content/uploads/2021/01/Bandipur.jpg",
+        description: "Jeep safari through Bandipur National Park",
+        highlights: [
+          "Spot tigers and elephants",
+          "Scenic forest drive",
+          "Bird watching"
+        ],
+        timing: "6:30 AM - 5:30 PM",
+        price: 3000,
+        includes: ["Safari vehicle", "Guide"]
+      }
+    ],
+    transport: [
+      {
+        type: "Auto",
+        availability: true,
+        price: "₹50-200",
+        description: "Best for short city rides",
+        waitTime: "2-5 minutes"
+      },
+      {
+        type: "Taxi",
+        availability: true,
+        price: "₹1000-2000/day",
+        description: "Ideal for full-day sightseeing",
+        waitTime: "5-10 minutes"
+      },
+      {
+        type: "Bus",
+        availability: true,
+        price: "₹10-50 per ride",
+        description: "Affordable city-wide transport",
+        frequency: "Every 15-20 minutes"
+      },
+      {
+        type: "Cab Services",
+        availability: true,
+        price: "₹12 per km (approx)",
+        description: "Ola, Uber available for easy travel",
+        bestFor: "Comfort and convenience"
+      },
+      {
+        type: "Cycle Rental",
+        availability: true,
+        price: "₹100 per hour",
+        description: "Best for exploring the heritage streets",
+        rentalSpots: "Near Mysore Palace, Karanji Lake"
+      }
+    ],
+    budget: {
+      budget: {
+        perDay: 2500,
+        includes: ["Budget hotels", "Local transport", "Street food"],
+        note: "Perfect for backpackers"
+      },
+      luxury: {
+        perDay: 6000,
+        includes: ["5-star hotels", "Private taxi", "Fine dining"],
+        note: "Ideal for a premium stay"
+      }
+    }
+  },
+'Coorg': {
+    image: "https://wallpaperaccess.com/full/3718857.jpg",
+    places: [
+      {
+        name: "Abbey Falls",
+        image: "https://pixahive.com/wp-content/uploads/2020/09/Abbey-Falls-Coorg-102702-pixahive.jpg",
+        description: "Scenic waterfall amidst coffee plantations",
+        timeNeeded: "1-2 hours",
+        entryFee: "₹15",
+        bestTime: "Post-monsoon (October - March)"
+      },
+      {
+        name: "Raja's Seat",
+        image: "https://bookmetickets.com/static/falcon/img/stock/page/5bb2d94d04a28675b2b99da3/6025203e04a2862e029a57f1/compressed/rajas_seat_coorg-new-.jpeg",
+        description: "Beautiful viewpoint offering stunning sunset views",
+        timeNeeded: "1 hour",
+        entryFee: "₹10",
+        bestTime: "Sunrise or sunset"
+      },
+      {
+        name: "Dubare Elephant Camp",
+        image: "https://coorgtourism.co.in/images/places-to-visit/headers/dubare-elephant-camp-coorg-entry-fee-timings-holidays-reviews-header.jpg",
+        description: "Interact with elephants and enjoy river rafting",
+        timeNeeded: "2-3 hours",
+        entryFee: "₹50",
+        bestTime: "Morning (for elephant activities)"
+      }
+    ],
+    hotels: [
+      {
+        name: "Evolve Back Coorg",
+        image: "https://www.skywaytour.com/media/gallery/358-2021-08-06-05-34-59-lillypoolvillaoutside.jpg",
+        priceRange: "₹20,000",
+        rating: 4.8,
+        amenities: ["Private Villas", "Infinity Pool", "Coffee Estate Walks"]
+      },
+      {
+        name: "The Tamara Coorg",
+        image: "https://experiencekerala.in/image-uploads/1506484187.5.jpg",
+        priceRange: "₹15,000",
+        rating: 4.7,
+        amenities: ["Luxury Cottages", "Nature Trails", "Spa"]
+      }
+    ],
+    restaurants: [
+      {
+        name: "Coorg Cuisine",
+        image: "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2019-11/CLBM-VJPT-FOOD-2174.jpg",
+        cuisine: "Coorgi, South Indian",
+        price: "₹800 for two persons",
+        mustTry: ["Pandi Curry", "Kadambuttu"]
+      },
+      {
+        name: "Raintree Restaurant",
+        image: "https://www.therestauranttimes.com/uploads/2/6/6/9/26695178/88336039-2730824350304049-644688910550564864-o-orig_orig.jpg",
+        cuisine: "Multi-cuisine",
+        price: "₹1200 for two persons",
+        mustTry: ["Kodava Fish Curry", "Bamboo Shoot Curry"]
+      }
+    ],
+    adventures: [
+      {
+        name: "Tadiandamol Trek",
+        image: "https://i0.wp.com/www.duskydawn.com/wp-content/uploads/2020/11/Tadiandamol-1-1.png?fit=1024%2C819&ssl=1&is-pending-load=1",
+        description: "Trek to the highest peak in Coorg",
+        highlights: [
+          "Spectacular mountain views",
+          "Dense forest trails",
+          "Camping options available"
+        ],
+        timing: "5:00 AM - 5:00 PM",
+        price: "Free",
+        includes: ["Guided trek available at extra cost"]
+      },
+      {
+        name: "White Water Rafting at Barapole",
+        image: "https://i.ytimg.com/vi/Hk-O6hHzwy0/maxresdefault.jpg",
+        description: "Thrilling rafting experience in Coorg's rivers",
+        highlights: [
+          "Exciting rapids",
+          "Professional safety gear",
+          "Scenic river views"
+        ],
+        timing: "8:00 AM - 3:00 PM",
+        price: 1200,
+        includes: ["Raft rental", "Guide", "Safety gear"]
+      },
+      {
+        name: "Coffee Plantation Tour",
+        image: "https://lh3.googleusercontent.com/LP0KaZgJYh_DRTGStq3r2TiAmrR__fLN2wfu5jS4yz2g2C_ABiB1sy4RomAQQknjrVE0jLOI-8frt48vlgXTMCxwhIQ=w1000",
+        description: "Explore lush coffee estates and taste fresh coffee",
+        highlights: [
+          "Learn coffee-making process",
+          "Walk through spice gardens",
+          "Taste freshly brewed coffee"
+        ],
+        timing: "9:00 AM - 5:00 PM",
+        price: 500,
+        includes: ["Guided tour", "Coffee tasting"]
+      }
+    ],
+    transport: [
+      {
+        type: "Auto",
+        availability: true,
+        price: "₹50-200",
+        description: "Best for short distances",
+        waitTime: "2-5 minutes"
+      },
+      {
+        type: "Taxi",
+        availability: true,
+        price: "₹1500-3000/day",
+        description: "Ideal for sightseeing",
+        waitTime: "5-10 minutes"
+      },
+      {
+        type: "Bus",
+        availability: true,
+        price: "₹10-50 per ride",
+        description: "Budget-friendly option",
+        frequency: "Every 30 minutes"
+      },
+      {
+        type: "Cab Services",
+        availability: true,
+        price: "₹15 per km (approx)",
+        description: "Ola/Uber limited availability",
+        bestFor: "Comfort and flexibility"
+      },
+      {
+        type: "Bike Rental",
+        availability: true,
+        price: "₹500 per day",
+        description: "Perfect for exploring hilly roads",
+        rentalSpots: "Madikeri, Kushalnagar"
+      }
+    ],
+    budget: {
+      budget: {
+        perDay: 3000,
+        includes: ["Budget hotels", "Local transport", "Simple meals"],
+        note: "Ideal for backpackers"
+      },
+      luxury: {
+        perDay: 8000,
+        includes: ["Luxury stay", "Private cab", "Fine dining"],
+        note: "For a relaxed vacation"
+      }
+    }
+  },
+ 'Leh-Ladakh': {
+    image: "http://www.indiantourister.com/wp-content/uploads/2018/08/Leh.jpg",
+    places: [
+      {
+        name: "Pangong Lake",
+        image: "https://www.visittnt.com/blog/wp-content/uploads/2017/10/Leh-1_83a986d11475c9b715656d71401258a1.jpg",
+        description: "Stunning high-altitude lake with changing colors",
+        timeNeeded: "Half-day to full-day",
+        entryFee: "₹20 per person",
+        bestTime: "May - September"
+      },
+      {
+        name: "Nubra Valley",
+        image: "https://www.tripsavvy.com/thmb/CRSobtXXeeui3Px6mf2G0Y-JaZI=/2119x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-488194509-1029ed05f77e4b81863a344e28b2791f.jpg",
+        description: "Beautiful cold desert with sand dunes and Bactrian camels",
+        timeNeeded: "1-2 days",
+        entryFee: "Free",
+        bestTime: "June - September"
+      },
+      {
+        name: "Magnetic Hill",
+        image: "https://devilonwheels.com/wp-content/uploads/2018/12/Magnetic-Hill-Leh-Ladakh-10.jpg",
+        description: "Mysterious spot where vehicles appear to move uphill on their own",
+        timeNeeded: "1 hour",
+        entryFee: "Free",
+        bestTime: "May - October"
+      }
+    ],
+    hotels: [
+      {
+        name: "The Grand Dragon Ladakh",
+        image: "https://www.cfmedia.vfmleonardo.com/imageRepo/6/0/101/719/895/hydlk-exterior-8197-hor-clsc_S.jpg",
+        priceRange: "₹15,000",
+        rating: 4.8,
+        amenities: ["Luxury Stay", "Mountain Views", "Central Heating"]
+      },
+      {
+        name: "Ladakh Sarai Resort",
+        image: "https://static.wixstatic.com/media/d452ce_fbc38fe844c2453daae742451b256346~mv2.jpg/v1/fill/w_1600,h_800,al_c,q_85/offbeat_trips_resort_ladakh_sarai_ladakh3.jpg",
+        priceRange: "₹8,000",
+        rating: 4.6,
+        amenities: ["Cottage Stay", "Bonfire Nights", "Authentic Ladakhi Cuisine"]
+      }
+    ],
+    restaurants: [
+      {
+        name: "The Tibetan Kitchen",
+        image: "https://www.ju-lehadventure.com/photos/ladakh_information/15-best-restaurants-and-cafes-in-leh/the-tibetan-kitchen.jpg",
+        cuisine: "Tibetan, Ladakhi",
+        price: "₹1000 for two persons",
+        mustTry: ["Momos", "Thukpa"]
+      },
+      {
+        name: "Gesmo Restaurant",
+        image: "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/56/ca/1a/gesmo-restaurant.jpg",
+        cuisine: "Multi-cuisine",
+        price: "₹800 for two persons",
+        mustTry: ["Yak Cheese Pizza", "Butter Tea"]
+      }
+    ],
+    adventures: [
+      {
+        name: "Chadar Trek",
+        image: "https://brozaadventures.com/soft/file_store/highlight/981532383CJ.jpg",
+        description: "Thrilling winter trek over the frozen Zanskar River",
+        highlights: [
+          "Walk on a frozen river",
+          "Sub-zero temperatures",
+          "Camping in caves"
+        ],
+        timing: "January - February",
+        price: 25000,
+        includes: ["Guide", "Tents", "Meals"]
+      },
+      {
+        name: "Bike Ride to Khardung La",
+        image: "https://i.ytimg.com/vi/_THLpDh_Vhs/maxresdefault.jpg",
+        description: "Ride on one of the highest motorable roads in the world",
+        highlights: [
+          "Breathtaking mountain views",
+          "Adventure-filled ride",
+          "Snow-covered landscapes"
+        ],
+        timing: "May - September",
+        price: 2000,
+        includes: ["Bike rental", "Helmet", "Fuel"]
+      },
+      {
+        name: "Camel Safari in Nubra Valley",
+        image: "https://www.holidify.com/images/cmsuploads/compressed/2245989501ddbfd32f73b_20200521174329.jpg",
+        description: "Ride on double-humped Bactrian camels in the cold desert",
+        highlights: [
+          "Unique desert experience",
+          "Spectacular views of sand dunes",
+          "Visit Diskit Monastery"
+        ],
+        timing: "8:00 AM - 5:00 PM",
+        price: 1500,
+        includes: ["Camel ride", "Guide"]
+      }
+    ],
+    transport: [
+      {
+        type: "Bike Rental",
+        availability: true,
+        price: "₹1000-2000 per day",
+        description: "Best way to explore Ladakh",
+        rentalSpots: "Leh Market, Changspa Road"
+      },
+      {
+        type: "Taxi",
+        availability: true,
+        price: "₹2500-5000 per day",
+        description: "Ideal for group travel",
+        waitTime: "5-10 minutes"
+      },
+      {
+        type: "Shared Cabs",
+        availability: true,
+        price: "₹500-1500 per ride",
+        description: "Cost-effective for solo travelers",
+        frequency: "Daily departures to key locations"
+      }
+    ],
+    budget: {
+      budget: {
+        perDay: 4000,
+        includes: ["Budget homestays", "Bike rental", "Local food"],
+        note: "Perfect for backpackers"
+      },
+      luxury: {
+        perDay: 10000,
+        includes: ["Luxury resorts", "Private cab", "Fine dining"],
+        note: "For a relaxed and comfortable trip"
+      }
+    }
   }
-}; 
+};

@@ -9,13 +9,14 @@ const CitySlideshow = () => {
       name: 'Delhi',
       image: 'https://images.unsplash.com/photo-1587474260584-136574528ed5',
       description: 'Experience the blend of history and modernity',
-      attractions: ['Red Fort', 'Qutub Minar', 'India Gate']
+      attractions: ['Red Fort', 'Qutub Minar', 'India Gate'] 
     },
     {
       name: 'Jaipur',
       image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245',
       description: 'The Pink City with royal heritage',
-      attractions: ['Amber Fort', 'Hawa Mahal', 'City Palace']
+      attractions: ['Amber Fort', 'Hawa Mahal', 'City Palace'],
+     
     },
     {
       name: 'Varanasi',
@@ -88,6 +89,46 @@ const CitySlideshow = () => {
       attractions: ['Botanical Gardens', 'Nilgiri Mountain Railway', 'Ooty Lake'],
       bestTime: 'October to June',
       knownFor: ['Tea Gardens', 'Colonial Heritage', 'Pleasant Weather']
+    },
+    {
+      name: "Kolkata",
+      image: "https://www.mistay.in/travel-blog/content/images/size/w2000/2021/08/Roam-around-the-top-7-historical-monuments-of-Kolkata-I-MiStay.jpeg",
+      description: "The City of Joy",
+      attractions: ["Victoria Memorial", "Howrah Bridge", "Dakshineswar Kali Temple"],
+      bestTime: "October to March",
+      knownFor: ["Colonial Architecture", "Cultural Festivals", "Street Food"]
+    },
+    {
+      name: "Hyderabad",
+      image: "https://www.hyderabadtourism.travel/images/v2/header-places/chowmahalla-palace-hyderabad-tourism-entryfee-timings-reviews-header.jpg",
+      description: "The City of Pearls",
+      attractions: ["Charminar", "Golconda Fort", "Ramoji Film City"],
+      bestTime: "October to February",
+      knownFor: ["Biryani", "Historical Monuments", "IT Hub"]
+    },
+    {
+      name: "Mysore",
+      image: "https://photographylife.com/wp-content/uploads/2015/07/DP2M0153c.jpg",
+      description: "The Cultural Capital of Karnataka",
+      attractions: ["Mysore Palace", "Chamundi Hills", "Brindavan Gardens"],
+      bestTime: "October to March",
+      knownFor: ["Mysore Dasara", "Silk Sarees", "Sandalwood"]
+    },
+    {
+      name: "Coorg",
+      image: "https://www.tripsavvy.com/thmb/lLR8zWSkhOBI52i2afnsVfQPM2U=/2114x1418/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-525552511-59edb25a22fa3a0011cd1296.jpg",
+      description: "The Scotland of India",
+      attractions: ["Abbey Falls", "Raja's Seat", "Dubare Elephant Camp"],
+      bestTime: "October to May",
+      knownFor: ["Coffee Plantations", "Scenic Landscapes", "Trekking"]
+    },
+    {
+      name: "Leh-Ladakh",
+      image: "https://adventourist.in/travel-blog/wp-content/uploads/2020/10/Leh-Ladakh-Scenic-Beauty-1024x683.jpeg",
+      description: "The Land of High Passes",
+      attractions: ["Pangong Lake", "Magnetic Hill", "Nubra Valley"],
+      bestTime: "May to September",
+      knownFor: ["Breathtaking Landscapes", "Monasteries", "Adventure Sports"]
     }
   ];
 
@@ -128,26 +169,60 @@ const CitySlideshow = () => {
               <p>{city.description}</p>
               <div className="city-details">
                 <div className="attractions">
-                  <h3>Top Attractions:</h3>
+                  <h3>Top Attractions</h3>
                   <ul>
-                    {city.attractions.map((attraction, i) => (
+                    {city.attractions?.map((attraction, i) => (
                       <li key={i}>{attraction}</li>
                     ))}
                   </ul>
                 </div>
-                {city.bestTime && (
-                  <div className="best-time">
-                    <h3>Best Time to Visit:</h3>
-                    <p>{city.bestTime}</p>
+                
+                {city.bestRestaurants && (
+                  <div className="dining">
+                    <h3>Best Restaurants</h3>
+                    <ul>
+                      {city.bestRestaurants.map((restaurant, i) => (
+                        <li key={i}>
+                          {restaurant.name} - {restaurant.cuisine} ({restaurant.priceRange})
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 )}
-                {city.knownFor && (
-                  <div className="known-for">
-                    <h3>Known For:</h3>
+
+                {city.topHotels && (
+                  <div className="accommodation">
+                    <h3>Where to Stay</h3>
                     <ul>
-                      {city.knownFor.map((item, i) => (
-                        <li key={i}>{item}</li>
+                      {city.topHotels.map((hotel, i) => (
+                        <li key={i}>
+                          {hotel.name} - {hotel.category} ({hotel.priceRange})
+                        </li>
                       ))}
+                    </ul>
+                  </div>
+                )}
+
+                {city.activities && (
+                  <div className="activities">
+                    <h3>Things to Do</h3>
+                    <ul>
+                      {city.activities.map((activity, i) => (
+                        <li key={i}>
+                          {activity.name} - {activity.cost}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {city.budgetInfo && (
+                  <div className="budget-guide">
+                    <h3>Budget Guide</h3>
+                    <ul>
+                      <li>Budget: {city.budgetInfo.budget}</li>
+                      <li>Moderate: {city.budgetInfo.moderate}</li>
+                      <li>Luxury: {city.budgetInfo.luxury}</li>
                     </ul>
                   </div>
                 )}

@@ -7,14 +7,32 @@ const Login = ({ onLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your authentication logic here
     onLogin(username);
   };
 
   return (
     <div className="login-container">
+      <div className="travel-animations">
+        <div className="floating-image img1">
+          <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523" alt="Taj Mahal" />
+        </div>
+        <div className="floating-image img2">
+          <img src="https://static.toiimg.com/photo/53438383/.jpg" alt="Red Fort" />
+        </div>
+        <div className="floating-image img3">
+          <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66" alt="Udaipur Palace" />
+        </div>
+        <div className="floating-image img4">
+          <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2" alt="Goa Beach" />
+        </div>
+      </div>
+
       <div className="login-box">
-        <h2>Welcome to Trip Planner</h2>
+        <div className="login-header">
+          <h2>Welcome to Trip Planner</h2>
+          <p>Your journey begins here</p>
+        </div>
+
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label htmlFor="username">Username</label>
@@ -36,8 +54,9 @@ const Login = ({ onLogin }) => {
               required
             />
           </div>
-          <button type="submit">Login</button>
+          <button type="submit">Start Your Journey</button>
         </form>
+
         <div className="login-footer">
           <a href="#">Forgot Password?</a>
           <a href="#">Sign Up</a>

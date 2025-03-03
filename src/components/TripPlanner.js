@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './TripPlanner.css';
 import { destinations } from '../data/destinations';
 import CitySlideshow from './CitySlideshow';
-
 const TripPlanner = () => {
   const [days, setDays] = useState('');
   const [destination, setDestination] = useState('');
@@ -40,7 +39,7 @@ const TripPlanner = () => {
   };
 
   const handleNext = () => {
-    const tabs = ['places', 'hotels', 'restaurants', 'adventures', 'transport'];
+    const tabs = ['places', 'hotels', 'restaurants', 'adventures', 'transport', 'itinerary'];
     const currentIndex = tabs.indexOf(activeTab);
     if (currentIndex < tabs.length - 1) {
       setActiveTab(tabs[currentIndex + 1]);
@@ -48,11 +47,39 @@ const TripPlanner = () => {
   };
 
   const handlePrevious = () => {
-    const tabs = ['places', 'hotels', 'restaurants', 'adventures', 'transport'];
+    const tabs = ['places', 'hotels', 'restaurants', 'adventures', 'transport', 'itinerary'];
     const currentIndex = tabs.indexOf(activeTab);
     if (currentIndex > 0) {
       setActiveTab(tabs[currentIndex - 1]);
     }
+  };
+
+  const generateItinerary = (numberOfDays, cityData) => {
+    if (!cityData || !cityData.places) return [];
+
+    const itinerary = [];
+    const allPlaces = [...cityData.places];
+    const placesPerDay = 3; // Assuming 3 places per day is comfortable
+
+    for (let day = 1; day <= numberOfDays; day++) {
+      const dayPlaces = allPlaces.splice(0, placesPerDay);
+      const dayPlan = {
+        day: day,
+        morning: dayPlaces[0],
+        afternoon: dayPlaces[1],
+        evening: dayPlaces[2],
+        meals: {
+          breakfast: cityData.restaurants ? cityData.restaurants[day % cityData.restaurants.length] : null,
+          lunch: cityData.restaurants ? cityData.restaurants[(day + 1) % cityData.restaurants.length] : null,
+          dinner: cityData.restaurants ? cityData.restaurants[(day + 2) % cityData.restaurants.length] : null
+        },
+        hotel: cityData.hotels ? cityData.hotels[day % cityData.hotels.length] : null,
+        activity: cityData.adventures ? cityData.adventures[day % cityData.adventures.length] : null
+      };
+      itinerary.push(dayPlan);
+    }
+
+    return itinerary;
   };
 
   const renderTabs = () => (
@@ -88,6 +115,12 @@ const TripPlanner = () => {
         >
           Transport
         </button>
+        <button 
+          className={`tab ${activeTab === 'itinerary' ? 'active' : ''}`}
+          onClick={() => setActiveTab('itinerary')}
+        >
+          Day-wise Itinerary
+        </button>
       </div>
       <div className="tab-navigation">
         <button 
@@ -100,13 +133,128 @@ const TripPlanner = () => {
         <button 
           className="nav-button next"
           onClick={handleNext}
-          disabled={activeTab === 'transport'}
+          disabled={activeTab === 'itinerary'}
         >
           Next →
         </button>
       </div>
     </div>
   );
+
+  const renderItinerary = () => {
+    const itinerary = generateItinerary(parseInt(days), cityData);
+
+    return (
+      <div className="itinerary-container">
+        <h2>Your {days}-Day Itinerary for {destination}</h2>
+        {itinerary.map((dayPlan, index) => (
+          <div key={index} className="day-plan">
+            <h3>Day {dayPlan.day}</h3>
+            
+            <div className="timeline">
+              <div className="time-slot">
+                <h4>Morning</h4>
+                {dayPlan.morning && (
+                  <div className="place-card">
+                    <img src={dayPlan.morning.image} alt={dayPlan.morning.name} />
+                    <div className="place-details">
+                      <h5>{dayPlan.morning.name}</h5>
+                      <p>{dayPlan.morning.description}</p>
+                      <div className="place-info">
+                        <span>🕒 {dayPlan.morning.timeNeeded}</span>
+                        <span>💰 {dayPlan.morning.entryFee}</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {dayPlan.meals.breakfast && (
+                  <div className="meal-suggestion">
+                    <h6>Breakfast at: {dayPlan.meals.breakfast.name}</h6>
+                    <p>Cuisine: {dayPlan.meals.breakfast.cuisine}</p>
+                  </div>
+                )}
+              </div>
+
+              <div className="time-slot">
+                <h4>Afternoon</h4>
+                {dayPlan.afternoon && (
+                  <div className="place-card">
+                    <img src={dayPlan.afternoon.image} alt={dayPlan.afternoon.name} />
+                    <div className="place-details">
+                      <h5>{dayPlan.afternoon.name}</h5>
+                      <p>{dayPlan.afternoon.description}</p>
+                      <div className="place-info">
+                        <span>🕒 {dayPlan.afternoon.timeNeeded}</span>
+                        <span>💰 {dayPlan.afternoon.entryFee}</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {dayPlan.meals.lunch && (
+                  <div className="meal-suggestion">
+                    <h6>Lunch at: {dayPlan.meals.lunch.name}</h6>
+                    <p>Cuisine: {dayPlan.meals.lunch.cuisine}</p>
+                  </div>
+                )}
+              </div>
+
+              <div className="time-slot">
+                <h4>Evening</h4>
+                {dayPlan.evening && (
+                  <div className="place-card">
+                    <img src={dayPlan.evening.image} alt={dayPlan.evening.name} />
+                    <div className="place-details">
+                      <h5>{dayPlan.evening.name}</h5>
+                      <p>{dayPlan.evening.description}</p>
+                      <div className="place-info">
+                        <span>🕒 {dayPlan.evening.timeNeeded}</span>
+                        <span>💰 {dayPlan.evening.entryFee}</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {dayPlan.meals.dinner && (
+                  <div className="meal-suggestion">
+                    <h6>Dinner at: {dayPlan.meals.dinner.name}</h6>
+                    <p>Cuisine: {dayPlan.meals.dinner.cuisine}</p>
+                  </div>
+                )}
+              </div>
+
+              {dayPlan.activity && (
+                <div className="activity-suggestion">
+                  <h4>Suggested Activity</h4>
+                  <div className="activity-card">
+                    <img src={dayPlan.activity.image} alt={dayPlan.activity.name} />
+                    <div className="activity-details">
+                      <h5>{dayPlan.activity.name}</h5>
+                      <p>{dayPlan.activity.description}</p>
+                      <p>Price: ₹{dayPlan.activity.price}</p>
+                      <p>Timing: {dayPlan.activity.timing}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {dayPlan.hotel && (
+                <div className="hotel-suggestion">
+                  <h4>Stay at</h4>
+                  <div className="hotel-card">
+                    <img src={dayPlan.hotel.image} alt={dayPlan.hotel.name} />
+                    <div className="hotel-details">
+                      <h5>{dayPlan.hotel.name}</h5>
+                      <p>{dayPlan.hotel.description}</p>
+                      <p>Price: ₹{dayPlan.hotel.priceRange}/night</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
 
   const renderContent = () => {
     switch (activeTab) {
@@ -142,35 +290,30 @@ const TripPlanner = () => {
           <div className="hotels-grid">
             {cityData?.hotels?.map((hotel, index) => (
               <div key={index} className="hotel-card">
-                <div className="budget-category">
-                  {hotel.priceRange <= 5000 ? '💰 Budget' : 
-                   hotel.priceRange <= 15000 ? '💰💰 Mid-Range' : 
-                   '💰💰💰 Luxury'}
-                </div>
                 <img 
-                  src={hotel.image || 'default-hotel-image.jpg'} 
+                  src={hotel.image} 
                   alt={hotel.name}
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/400x300?text=Image+Not+Available'
+                    e.target.src = 'https://via.placeholder.com/300x200?text=Hotel+Image';
                   }}
                 />
-                <div className="card-content">
-                  <h4>{hotel.name}</h4>
-                  <p>{hotel.description}</p>
-                  <div className="hotel-details">
-                    <div className="price">₹{hotel.priceRange}/night</div>
-                    {hotel.rating && <div className="rating">⭐ {hotel.rating}</div>}
+                <div className="hotel-details">
+                  <h3>{hotel.name}</h3>
+                  <div className="hotel-info">
+                    <span className="price">Price: {hotel.priceRange}</span>
+                    <span className="rating">Rating: {hotel.rating}⭐</span>
                   </div>
-                  {hotel.amenities && (
-                    <div className="amenities">
+                  <div className="amenities">
+                    <h4>Amenities:</h4>
+                    <ul>
                       {hotel.amenities.map((amenity, i) => (
-                        <span key={i} className="amenity-tag">{amenity}</span>
+                        <li key={i}>{amenity}</li>
                       ))}
-                    </div>
-                  )}
+                    </ul>
+                  </div>
                 </div>
               </div>
-            )) || <div>No hotels data available</div>}
+            )) || <div>No hotel data available for this destination</div>}
           </div>
         );
 
@@ -282,6 +425,9 @@ const TripPlanner = () => {
             )) || <div>No transport data available</div>}
           </div>
         );
+
+      case 'itinerary':
+        return renderItinerary();
 
       default:
         return <div>Please select a tab to view details</div>;
